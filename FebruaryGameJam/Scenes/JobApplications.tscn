@@ -1,0 +1,27 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Fonts/new_dynamicfont.tres" type="DynamicFont" id=1]
+[ext_resource path="res://Sprites/f50524ee5f161f437400aaf215c9e12f.jpg" type="Texture" id=2]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 511.419, 301.724 )
+rotation = 1.5708
+scale = Vector2( 1.14672, 3.1121 )
+texture = ExtResource( 2 )
+
+[node name="Label" type="Label" parent="."]
+margin_left = 215.0
+margin_top = 19.0
+margin_right = 643.0
+margin_bottom = 117.0
+rect_scale = Vector2( 2, 2 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_outline_modulate = Color( 0, 0, 0, 1 )
+custom_fonts/font = ExtResource( 1 )
+text = "Job Application"
+max_lines_visible = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
