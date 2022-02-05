@@ -65,6 +65,7 @@ margin_bottom = 112.741
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
 [connection signal="pressed" from="Upvote" to="." method="_on_upvoted"]
 [connection signal="pressed" from="Block" to="." method="_on_downvoted"]
 [connection signal="pressed" from="Delete" to="." method="_on_removed"]
