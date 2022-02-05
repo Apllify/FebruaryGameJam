@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/EmptyGauge.png-2622995ee9fa2519009b813b9593ee22.stex"
+path="res://.import/Asset 9.png-4c8fa1d4fedae0895dc09e8b73af9ab3.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/1x/EmptyGauge.png"
-dest_files=[ "res://.import/EmptyGauge.png-2622995ee9fa2519009b813b9593ee22.stex" ]
+source_file="res://Sprites/1x/Asset 9.png"
+dest_files=[ "res://.import/Asset 9.png-4c8fa1d4fedae0895dc09e8b73af9ab3.stex" ]
 
 [params]
 
