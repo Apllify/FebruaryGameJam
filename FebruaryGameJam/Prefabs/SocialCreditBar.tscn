@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Sprites/1x/ChinaGauge.png" type="Texture" id=1]
+[ext_resource path="res://Sprites/1x/EmptyGauge_1.png" type="Texture" id=2]
+
+[node name="SocialCreditBar" type="TextureProgress"]
+margin_left = 881.386
+margin_top = 103.388
+margin_right = 971.386
+margin_bottom = 474.388
+value = 60.0
+texture_under = ExtResource( 2 )
+texture_progress = ExtResource( 1 )
+fill_mode = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}

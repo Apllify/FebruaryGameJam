@@ -15,7 +15,7 @@ _global_script_class_icons={
 [application]
 
 config/name="FebruaryGameJam"
-run/main_scene="res://Scenes/JobApplications.tscn"
+run/main_scene="res://Scenes/BanningSimulator.tscn"
 config/icon="res://icon.png"
 
 [display]
