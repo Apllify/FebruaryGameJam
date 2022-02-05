@@ -1,17 +1,42 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://Fonts/new_dynamicfont.tres" type="DynamicFont" id=1]
+<<<<<<< HEAD
 [ext_resource path="res://Sprites/BackgroundSprite.jpg" type="Texture" id=2]
+=======
+[ext_resource path="res://Sprites/f50524ee5f161f437400aaf215c9e12f.jpg" type="Texture" id=2]
+[ext_resource path="res://Sprites/textbox.png" type="Texture" id=3]
+>>>>>>> 9cd601b489b32c14d839a0c63eacb70cb298334c
 
 [node name="Node2D" type="Node2D"]
 
-[node name="Sprite" type="Sprite" parent="."]
-position = Vector2( 511.419, 301.724 )
+[node name="Background" type="Sprite" parent="."]
+position = Vector2( 512.755, 301.724 )
 rotation = 1.5708
-scale = Vector2( 1.14672, 3.1121 )
+scale = Vector2( 1.14672, 3.104 )
 texture = ExtResource( 2 )
 
-[node name="Label" type="Label" parent="."]
+[node name="NameBox" type="Sprite" parent="."]
+position = Vector2( 334, 172.5 )
+scale = Vector2( 0.469536, 0.112335 )
+texture = ExtResource( 3 )
+
+[node name="AgeBox" type="Sprite" parent="."]
+position = Vector2( 816.969, 171.812 )
+scale = Vector2( 0.278699, 0.115364 )
+texture = ExtResource( 3 )
+
+[node name="MotivationBox" type="Sprite" parent="."]
+position = Vector2( 520.375, 486.25 )
+scale = Vector2( 0.822135, 0.435022 )
+texture = ExtResource( 3 )
+
+[node name="PreviousExperienceBox" type="Sprite" parent="."]
+position = Vector2( 524, 300.625 )
+scale = Vector2( 0.819456, 0.318833 )
+texture = ExtResource( 3 )
+
+[node name="JobApplication" type="Label" parent="."]
 margin_left = 215.0
 margin_top = 19.0
 margin_right = 643.0
@@ -22,6 +47,55 @@ custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_colors/font_outline_modulate = Color( 0, 0, 0, 1 )
 text = "Job Application"
 max_lines_visible = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Name" type="Label" parent="."]
+margin_left = 73.0
+margin_top = 108.0
+margin_right = 223.0
+margin_bottom = 154.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_outline_modulate = Color( 0, 0, 0, 1 )
+custom_fonts/font = ExtResource( 1 )
+text = "Name: "
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Age" type="Label" parent="."]
+margin_left = 666.0
+margin_top = 109.0
+margin_right = 778.0
+margin_bottom = 149.0
+custom_colors/font_color = Color( 0.0431373, 0.0431373, 0.0431373, 1 )
+custom_fonts/font = ExtResource( 1 )
+text = "Age: "
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Motivation" type="Label" parent="."]
+margin_left = 76.0
+margin_top = 362.0
+margin_right = 116.0
+margin_bottom = 376.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = ExtResource( 1 )
+text = "Motivation:"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PreviousExperience" type="Label" parent="."]
+margin_left = 77.0
+margin_top = 204.0
+margin_right = 515.0
+margin_bottom = 244.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = ExtResource( 1 )
+text = "Previous Experience:"
 __meta__ = {
 "_edit_use_anchors_": false
 }
