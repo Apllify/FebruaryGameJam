@@ -1,0 +1,65 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Fonts/new_dynamicfont.tres" type="DynamicFont" id=1]
+[ext_resource path="res://Fonts/small_font.tres" type="DynamicFont" id=2]
+
+[node name="Post" type="Control"]
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PostContent" type="Label" parent="."]
+margin_left = 25.0
+margin_top = -5.0
+margin_right = 761.0
+margin_bottom = 64.0
+custom_fonts/font = ExtResource( 1 )
+text = "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+align = 1
+valign = 1
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PostAuthor" type="Label" parent="."]
+margin_left = 5.0
+margin_top = 63.0
+margin_right = 793.0
+margin_bottom = 80.0
+custom_fonts/font = ExtResource( 2 )
+text = "made by u/username"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Upvote" type="Button" parent="."]
+modulate = Color( 0, 1, 0.517647, 1 )
+margin_left = 338.0
+margin_top = 93.0
+margin_right = 365.0
+margin_bottom = 113.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Block" type="Button" parent="."]
+modulate = Color( 1, 0.0313726, 0.0313726, 1 )
+margin_left = 385.509
+margin_top = 93.2811
+margin_right = 412.509
+margin_bottom = 113.281
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Delete" type="Button" parent="."]
+modulate = Color( 0, 0, 0, 1 )
+margin_left = 431.01
+margin_top = 92.7407
+margin_right = 458.01
+margin_bottom = 112.741
+__meta__ = {
+"_edit_use_anchors_": false
+}

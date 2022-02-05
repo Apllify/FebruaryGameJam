@@ -3,7 +3,6 @@
 [ext_resource path="res://Fonts/ChillPixels-Maximal.otf" type="DynamicFontData" id=1]
 
 [resource]
-size = 23
 outline_size = 2
-outline_color = Color( 0, 0, 0, 1 )
+outline_color = Color( 0.0941176, 0.0588235, 0.698039, 1 )
 font_data = ExtResource( 1 )
