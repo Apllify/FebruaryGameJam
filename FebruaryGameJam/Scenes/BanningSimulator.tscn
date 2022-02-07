@@ -1,9 +1,10 @@
+
 [gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://Fonts/new_dynamicfont.tres" type="DynamicFont" id=1]
 [ext_resource path="res://Sprites/1x/ChinaGauge.png" type="Texture" id=2]
+
 [ext_resource path="res://Sprites/1x/ScrollContainerOutline.png" type="Texture" id=3]
-[ext_resource path="res://Sprites/1x/EmptyGauge_1.png" type="Texture" id=4]
 [ext_resource path="res://Sprites/BackgroundSprite.jpg" type="Texture" id=5]
 [ext_resource path="res://Scripts/BanningSimulator.gd" type="Script" id=6]
 [ext_resource path="res://Prefabs/SceneSwitchHandler.tscn" type="PackedScene" id=7]
@@ -15,6 +16,7 @@ script = ExtResource( 6 )
 position = Vector2( 511.444, 299.543 )
 scale = Vector2( 1.9595, 1.81153 )
 texture = ExtResource( 5 )
+
 
 [node name="SocialCreditBar" type="TextureProgress" parent="."]
 margin_left = 881.386
@@ -28,6 +30,7 @@ fill_mode = 3
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
 
 [node name="StreakIndicator" type="Label" parent="."]
 margin_left = 871.0
