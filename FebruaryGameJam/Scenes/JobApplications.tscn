@@ -13,7 +13,7 @@
 
 [sub_resource type="StyleBoxTexture" id=4]
 
-[node name="Node2D" type="Node2D"]
+[node name="JobApplications" type="Node2D"]
 
 [node name="Background" type="Sprite" parent="."]
 position = Vector2( 511.742, 301.008 )

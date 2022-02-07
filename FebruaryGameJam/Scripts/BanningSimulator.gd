@@ -4,6 +4,13 @@ var post_class
 var rng 
 
 var scrollbox_reference
+var streak_indicator_reference
+
+var bar_reference
+var float_bar_value  
+var bar_deplete_rate = 3.0
+var current_streak = 0
+
 
 var bad_thinks = [
 	"I love kissing the ass of an authoritarian government that has killed 60-80 million of its own citizens",
@@ -55,6 +62,10 @@ func _ready():
 	rng.randomize()
 	
 	scrollbox_reference = get_node("ScrollContainer").get_node("VBoxContainer")
+	streak_indicator_reference = get_node("StreakIndicator")
+	
+	bar_reference = get_node("SocialCreditBar")
+	float_bar_value = bar_reference.get_value()
 	
 	generate_front_page()
 	
@@ -96,3 +107,33 @@ func generate_front_page():
 		
 	var final_control = Control.new()
 	scrollbox_reference.add_child(final_control)	
+
+func _process(delta):
+	#deplete the social credit gauge by the given rate
+	float_bar_value -= bar_deplete_rate * delta
+	bar_reference.set_value(float_bar_value)
+	
+func update_streak_indicator():
+	var new_text = "Streak : " + str(current_streak)
+	streak_indicator_reference.set_text(new_text)
+	
+func update_credit(action_conformity):
+	#the action conformity argument determins how "good" an action is from the perspective of the government
+	
+	#update streak depending on whether this is a good action
+	if action_conformity >= 0 :
+		current_streak += 1
+	else:
+		current_streak = 0
+		
+	#cap streak bonus at 5 
+	if current_streak > 5:
+		current_streak = 5
+		
+	#update the sterak indicator
+	update_streak_indicator()
+		 
+		
+	float_bar_value += action_conformity + current_streak * 2
+	bar_reference.set_value(float_bar_value)
+

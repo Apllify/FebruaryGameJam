@@ -1,8 +1,17 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Fonts/new_dynamicfont.tres" type="DynamicFont" id=1]
 [ext_resource path="res://Fonts/small_font.tres" type="DynamicFont" id=2]
 [ext_resource path="res://Scripts/Post.gd" type="Script" id=3]
+
+[sub_resource type="StyleBoxFlat" id=1]
+bg_color = Color( 0, 0, 0, 1 )
+
+[sub_resource type="StyleBoxFlat" id=2]
+bg_color = Color( 0, 0, 0, 1 )
+
+[sub_resource type="StyleBoxFlat" id=3]
+bg_color = Color( 0, 0, 0, 1 )
 
 [node name="Post" type="Control"]
 script = ExtResource( 3 )
@@ -42,6 +51,8 @@ margin_left = 338.0
 margin_top = 93.0
 margin_right = 365.0
 margin_bottom = 113.0
+custom_styles/disabled = SubResource( 1 )
+action_mode = 0
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -52,6 +63,8 @@ margin_left = 385.509
 margin_top = 93.2811
 margin_right = 412.509
 margin_bottom = 113.281
+custom_styles/disabled = SubResource( 2 )
+action_mode = 0
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -62,6 +75,8 @@ margin_left = 431.01
 margin_top = 92.7407
 margin_right = 458.01
 margin_bottom = 112.741
+custom_styles/disabled = SubResource( 3 )
+action_mode = 0
 __meta__ = {
 "_edit_use_anchors_": false
 }

@@ -1,16 +1,17 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=8 format=2]
 
+[ext_resource path="res://Fonts/new_dynamicfont.tres" type="DynamicFont" id=1]
 [ext_resource path="res://Sprites/1x/ChinaGauge.png" type="Texture" id=2]
 [ext_resource path="res://Sprites/1x/ScrollContainerOutline.png" type="Texture" id=3]
 [ext_resource path="res://Sprites/1x/EmptyGauge_1.png" type="Texture" id=4]
 [ext_resource path="res://Sprites/BackgroundSprite.jpg" type="Texture" id=5]
 [ext_resource path="res://Scripts/BanningSimulator.gd" type="Script" id=6]
+[ext_resource path="res://Prefabs/SceneSwitchHandler.tscn" type="PackedScene" id=7]
 
 [node name="BanningSimulator" type="Node2D"]
 script = ExtResource( 6 )
 
 [node name="BackgroundSprite" type="Sprite" parent="."]
-visible = false
 position = Vector2( 511.444, 299.543 )
 scale = Vector2( 1.9595, 1.81153 )
 texture = ExtResource( 5 )
@@ -20,10 +21,21 @@ margin_left = 881.386
 margin_top = 103.388
 margin_right = 971.386
 margin_bottom = 474.388
-value = 60.0
+value = 51.0
 texture_under = ExtResource( 4 )
 texture_progress = ExtResource( 2 )
 fill_mode = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="StreakIndicator" type="Label" parent="."]
+margin_left = 871.0
+margin_top = 484.0
+margin_right = 980.0
+margin_bottom = 524.0
+custom_fonts/font = ExtResource( 1 )
+text = "Streak : 0"
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -44,3 +56,5 @@ __meta__ = {
 
 [node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer"]
 custom_constants/separation = 120
+
+[node name="SceneSwitchHandler" parent="." instance=ExtResource( 7 )]
